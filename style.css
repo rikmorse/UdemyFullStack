@@ -32,7 +32,7 @@ nav ul li a.active:hover {
 /* ******************* thirdSection.html ********************** */
 
 /* ******************* fourthSection.html ********************** */
-img {
+#imageSec4 {
     border: solid 5px rgb(218, 5, 5);
     border-radius: 10px;
 }
@@ -43,7 +43,102 @@ img {
     color: white;
     text-align: center;         
 }
+.draggable {
+    color: red;
+}
+#baconList {
+    margin-left: -40px;
+    margin-top: -20px;
+    list-style: inside;
+}
+li[value="5"] {
+    color: red;
+}
+li[value="1"] {
+    color: blue;
+}
+li[value="10"] {
+    color: green;
+}
+#bacon, #bacon2 {
+    font-size: 20px;
+    text-align: center;;
+}
+#bacon {
+    width: 1000px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 1%;
+    top: 50px;
+    left: 50px;
+}
+#bacon  {
+    color: rgb(16, 9, 215);
+}
+#bacon2 {
+    color: rgb(215, 9, 9);
+}
+#bacon:hover {
+    background-color: green;
+}
+#bacon2 {
+    width: 1000px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 1%;
+    top: 50px;
+    left: 50px;
+}
+#bacon2:hover {
+    background-color: blue;
+}
 
+p.note {
+    color: red;
+}
+.note {
+    font-size: 20px;
+}
+#list001[value="16"]{
+    color: green;
+}
+#list001[value="18"] {
+    color: blue;
+}
+#ol2 {
+    margin-left: -40px;
+    margin-top: -20px;
+    list-style-position: inside;
+}
+ .div1{
+    text-align: center;
+}
+
+/* color language */
+
+
+.color-title {
+    font-weight: normal;
+}
+.colorTile {
+    height: 200px;
+    width: 200px;
+}
+#red {
+    color: red;
+}
+#blue {
+    color: blue;
+}
+#green {
+    color: green;
+}
+#yellow {
+    color: yellow;
+}
+#orange {
+    color: orange;
+}
 /* ******************* sixthSection.html ********************** */
 
 /* ******************* seventhSection.html ********************** */
