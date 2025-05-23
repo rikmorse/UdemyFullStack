@@ -141,6 +141,82 @@ p.note {
 }
 /* ******************* sixthSection.html ********************** */
 
+#rootSize {
+    font-size: 30px;
+  }
+#bodyColor {
+    background-color: antiquewhite;
+}
+#h16 {
+    color: whitesmoke;
+    background-color: darkseagreen;
+}
+#h26 {
+    color: #FAF8F1;
+    background-color: #C58940;
+}
+#pixel {
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+  }
+  #point {
+    font-size: 20pt;
+    font-family: 'Times New Roman', Times, sans-serif;
+  }
+  #em {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  #rem {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  html {
+    font-size: xx-large;
+  }
+  #fontTest {
+    font-family: "Architects Daughter", cursive;
+    text-align: center;
+  }
+  #arial {
+    font-family: Arial, sans-serif;
+  }
+
+  #serif {
+    font-family: serif;
+  }
+
+  #sans-serif {
+    font-family: sans-serif;
+  }
+
+  #cursive {
+    font-family: cursive;
+  }
+
+  #monospace {
+    font-family: monospace;
+  }
+
+  #fantasy {
+    font-family: fantasy;
+  }
+  #color6 {
+    color: coral;
+  }
+  #size6 {
+    font-size: 2rem;
+  }
+#weight6 {
+    font-weight: 900;
+}
+#family6 {
+    font-family: "Caveat", cursive;
+}
+#align6 {
+    text-align: right;
+}
+  
 /* ******************* seventhSection.html ********************** */
 
 /* ******************* eighthSection.html ********************** */
