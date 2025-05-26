@@ -223,7 +223,78 @@ p.note {
 #align6 {
     text-align: right;
 }
-  
+#box1 p #box2 p #box3 p {
+    margin: 0;
+}
+#box1 {
+    text-align: center;
+    height: 200px;
+    width: 350px;
+    margin-left: 20px;
+    border: 10px dashed red;
+    background-color: greenyellow;
+}
+#box2 {
+    text-align: center;
+    height: 200px;
+    width: 350px;
+    margin-left: 390px;
+    border: 15px dotted green;
+    background-color: rosybrown;
+}
+#box3 {
+    text-align: center;
+    height: 200px;
+    width: 350px;
+    margin-left: 0px;
+    border: 20px solid blue;
+    background-color: yellowgreen;
+}
+#imageQvitamins {
+    height: 200px;
+    width: 200px;
+    border-style: dashed;
+    border-color: red;
+    border-width: 5px 10px;
+    border-radius: 5%;
+    margin: 10px;
+    padding: 5px;
+    background-color: blue;
+
+}
+#avatarImg {
+    width: 50%;
+    height: 1500px;
+    margin-left: 25%;
+}
+#avatarImg p {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    font-family: "Libre Baskerville", san-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+#poster6 {
+    font-family: "Libre Baskerville", san-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    text-transform: uppercase;
+}
+#avatarImg img{
+    height: 75%;
+    width: 100%;
+    border: 5px solid white;
+    
+}
+
+
 /* ******************* seventhSection.html ********************** */
 
 /* ******************* eighthSection.html ********************** */
