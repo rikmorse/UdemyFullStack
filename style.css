@@ -324,20 +324,26 @@ p.note {
 
 
 #outer-box7 {
-    border: 10px solid purple;
+    background-color: purple;
 }
 .box7 {
     background-color: blue;
     padding: 10px;
 }
+ .inner-box7 {
+    background-color: red;
+ }
 p {
     color: yellow;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 5px;
+    padding: 0;
 }
-.box7 .inner-box7{
-    background-color: red;
+.white-text7 {
+    color: white !important;
 }
+
+
 
 
 
