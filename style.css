@@ -323,7 +323,7 @@ p.note {
 /* ******************* seventhSection.html ********************** */
 
 
-#outer-box7 {
+/* #outer-box7 {
     background-color: purple;
 }
 .box7 {
@@ -341,9 +341,27 @@ p {
 }
 .white-text7 {
     color: white !important;
+} */
+
+h1, h2 {
+    color: blueviolet;
 }
-
-
+.box71 > p {
+    color: firebrick;
+}
+.box71 .list71 {
+    color: blue;
+}  
+li.done71 {
+    color: seagreen;
+} 
+ul p.done71 {
+    font-size: 0.5rem;
+}
+/* Another way of doing the above is using > child selector */
+/* ul > p {
+    font-size: 5rem;
+} */
 
 
 
