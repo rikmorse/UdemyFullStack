@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html id="rootSize" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/iconGreenQ.png" type="image/QfavIcon"/>
+    <title>Training</title>
+</head>
+    <body id="bodyColor">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Section 2 intro HTML</a></li>
+                <li><a href="./thirdSection.html">Section 3 intermediate HTML</a></li>
+                <li><a href="./fourthSection.html">Section 4 Multi-Page HTML</a></li>
+                    <ul>
+                        <li><a href="./fifthSection.html">Section 5 intro to CSS</a></li>
+                        <li><a href="./sixthSection.html">Section 6 CSS Properties</a></li>
+                        <li><a href="./seventhSection.html">Section 7 CSS Intermediate</a></li>
+                        <li><a href="./eighthSection.html">Section 8 CSS Advanced</a></li>
+                        <li><a href="./ninthSection.html">Section 9 CSS Flexbox</a></li>
+                        <li><a href="./tenthSection.html">Section 10 CSS Grid</a></li>
+                    </ul>    
+                <li><a href="./eleventhSection.html">Section 11 Bootstrap</a></li>
+                <li><a href="./twelfthSection.html">Section 12 Web Design School</a></li>
+                <li><a href="./thirteenthSection.html">Section 13 Capstone</a></li>
+                    <ul>
+                        <li><a href="./fourteenthSection.html">Section 14 Intro JavaScript ES6</a></li>
+                        <li><a href="./fifteenthSection.html">Section 15 JavaScript Intermediate</a></li>
+                        <li><a href="./sixteenthSection.html">Section 16 DOM</a></li>
+                        <li><a href="./seventeenthSection.html">Section 17 Challenge 1 : Dicee Game</a></li>
+                        <li><a href="./eighteenthSection.html">Section 18 Javasript Advanced DOM Manipulation</a></li>
+                    </ul>    
+                <li><a href="./nineteenthSection.html">Section 19 jQuery</a></li>
+                <li><a href="./twentiethSection.html">Section 20 Challenge 2: Simon Game</a></li>
+                <li><a href="./MyInfoPage.html">My Info Page</a></li>
+                <li><a href="./aboutContact.html">About &amp Contact</a></li>
+            </ul>
+        </nav>
+            <!-- Heirarchy CSS -->
+    <h1>The Cascade - Specificity and Inheritance</h1>
+    <h3>Least specific to most specific "Specificity"</h3>
+    <img src="./images/CascadeOrderCss.png" alt="Order of CSS importance Cascade" height="300px" width="500px" style="border: solid 5px green;">
+    <ol>
+        <li value="4">Position</li>
+            <ol>
+                <li value="4">li { color: red; }</li>
+                <li value="3">li { color: green; }</li>
+                <li value="2">li { color: black; }</li>
+                <li value="1">li { color: white; }</li>
+            </ol>
+        <li value="3">Specificity</li>
+            <ol>
+                <li value="4">Element: li { color: blue; }</li>
+                <li value="3">Class: .first-class { color: red; }</li>
+                <li value="2">Attribute: li[draggable] { color: purple; }</li>
+                <li value="1">ID: #first-id { color: orange; }</li>
+            </ol>
+        <li value="2">Type</li>
+            <ol>
+                <li value="3">External: &lt;link rel="stylesheet" href="./style.css"&gt;</li>
+                <li value="2">Internal: &lt;style&gt; { color: red; } &lt;/style&gt;</li>
+                <li value="1">Inline: &lt;p style="color: green;"&gt;Hello Cascade&lt;p&gt;</li>
+            </ol>
+        <li value="1">Importance</li>
+            <ol>
+                <li value="2">{color: red;}</li>
+                <li value="1">{color: green !important;}</li>
+            </ol>
+    </ol>
+        <div id="outer-box7" class="box7">
+            <div class="box7">
+            <p>Yellow Text</p>
+                <div class="box inner-box7">
+                    <p class="white-text7">White Text</p>
+                </div>
+            </div>
+        <div class="box7">
+            <p>Yellow Text</p>
+                <div class="box inner-box7">
+                    <p class="white-text7">White Text</p>
+                </div>
+            </div>
+      </div>
+
+
+
+
+        </body>
+        </html>

@@ -320,8 +320,30 @@ p.note {
     text-transform: uppercase;
 }
 
-
 /* ******************* seventhSection.html ********************** */
+
+
+#outer-box7 {
+    border: 10px solid purple;
+}
+.box7 {
+    background-color: blue;
+    padding: 10px;
+}
+p {
+    color: yellow;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.box7 .inner-box7{
+    background-color: red;
+}
+
+
+
+
+
+
 
 /* ******************* eighthSection.html ********************** */
 
