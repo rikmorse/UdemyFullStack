@@ -343,7 +343,9 @@ p {
     color: white !important;
 } */
 
-h1, h2 {
+/* combining selectors */
+
+/* h1, h2 {
     color: blueviolet;
 }
 .box71 > p {
@@ -357,14 +359,114 @@ li.done71 {
 } 
 ul p.done71 {
     font-size: 0.5rem;
-}
+} */
 /* Another way of doing the above is using > child selector */
 /* ul > p {
     font-size: 5rem;
 } */
 
+/* CSS Position */
 
+/* .blue-box-static {
+    background-color: blue;
+    height: 300px;
+    width: 500px;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.red-circle-static {
+    background-color: red;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: static; /* static stays in the top left of ancestor */
+/* }
+.blue-box-relative {
+    background-color: green;
+    height: 200px;
+    width: 200px;
+}
+.red-circle-relative {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative; /* relative to the ancestor circle in the box  */
+ /*    left: 75px;
+    top: 125px;
+}
+.blue-box-absolute {
+    background-color: purple;
+    height: 200px;
+    width: 200px;
+}
+.red-circle-absolute {
+    background-color: brown;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%; 
+    position: absolute; /* appears on page without moving and is absolute */ /*
+    left: 50px;
+    top: 350px; 
+}
+.blue-box-fixed {
+    background-color: turquoise;
+    height: 200px;
+    width: 200px;
+}
+.red-circle-fixed {
+    background-color: slategray;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: fixed; /* appears on page and is fixed on page when scrolling up and down or side to side */
+/*     left: 75px;
+    top: 275px;
+}   */
+/* Z index settings */
 
+/* .zIndex {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    position: relative;
+    top: 50px;
+}
+.zIndex1 {
+    background-color: green;
+    height: 150px;
+    width: 150px;
+    z-index: 2;
+    position: relative;
+
+}
+.zIndex2 {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    z-index: 3;
+    position: relative;
+    top: 10px;
+}
+.zIndex3 {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    z-index: 4;
+    position: relative;
+    bottom: 10px;
+}
+.zIndex4 {
+    background-color: darkkhaki;
+    height: 10px;
+    width: 10px;
+    z-index: 5;
+    position: relative;
+    bottom: 25px;
+} */
+
+/* Project Section 7-46 CSS Flag */
 
 
 
