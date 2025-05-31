@@ -658,7 +658,16 @@ ul p.done71 {
     color: white;
   }
 
-
+/* Float */
+.imgFloat {
+    float: left;
+}
+.imgFloat2 {
+    float: right;
+}
+footer {
+    clear: both;
+}
 /* ******************* ninthSection.html ********************** */
 
 /* ******************* tenthSection.html ********************** */
