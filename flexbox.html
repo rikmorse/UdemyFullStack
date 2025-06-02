@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flexbox</title>
+  <style>
+body {
+    background-color: gray;
+}
+nav {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: auto
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    padding-right: 5px;
+    border-top: 5px;
+}
+nav ul li a {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border-style: solid;
+    border-color: lightgreen;
+}
+nav ul li a:hover {
+    background-color: darkgreen;
+}
+nav ul li a.active {
+    font-weight: bold;
+}
+nav ul li a.active:hover {
+    text-decoration: none;
+}
+    
+    .flex-container {
+      display: flex;
+    }
+
+    .card {
+      background: blue;
+      border: 30px solid white;
+      height: 100px;
+      flex: 1;
+    }
+
+    .first {
+      flex: 2;
+    }
+
+    .second {
+      flex: 0.5;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+        <li><a href="./eighthSection.html">Back</a></li>
+    </ul>
+</nav>
+  <h1>CSS Flexbox</h1>
+  <div class="flex-container">
+    <div class="first card"></div>
+    <div class="second card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
+
+
+</body>
+
+</html>
