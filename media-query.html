@@ -7,8 +7,8 @@
   <title>Media Query</title>
   <style>
     body {
-    background-color: gray;
-}
+      background-color: aquamarine;
+    }
 nav {
     background-color: black;
     color: white;
@@ -56,6 +56,26 @@ nav ul li a.active:hover {
         width: 200px;
       }
     }
+    @media (min-width: 319px) and (max-width: 480px) {
+      body {
+        background-color: lightsalmon;
+      }
+    }
+    @media (min-width: 481px) and (max-width: 1200px) {
+      body {
+        background-color: powderblue;
+      }
+    }
+    @media (min-width: 1201px) and (max-width: 1600px) {
+      body {
+      background-color: limegreen;
+    }
+  }
+    @media (min-width: 1601px) {
+      body {
+      background-color: seagreen
+    }
+  }
   </style>
 </head>
 
@@ -65,7 +85,15 @@ nav ul li a.active:hover {
         <li><a href="./eighthSection.html">Back</a></li>
     </ul>
 </nav>
-  <h1>Media Query</h1>
+<h1>Media Query</h1>
+<p>Use Dev Tools Responsive screen sizing to test the different colors for the sizes</p>
+<ol>
+  <li>Mobile Devices: 200px — 318px. Color: aquamarine!</li>
+  <li>iPads and Tablets: 319px — 480px. Color: lightsalmon!</li>
+  <li>Laptops: 481px — 1200px. Color: powderblue!</li>
+  <li>Desktops: 1201px - 1600px. Color: limegreen!</li>
+  <li>Large Desktops: 1601px and more. Color: seagreen!</li>
+</ol>
   
   <div></div>
 </body>
