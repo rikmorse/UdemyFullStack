@@ -774,6 +774,12 @@ div {
 }
 
 /* Media Query Project */
+.body8p {
+    all: initial;
+    * {
+      all: unset;
+    }
+  }
 
 .body8p {
     font-family: "Poppins", sans-serif;
@@ -783,14 +789,75 @@ div {
     flex-direction: column;
     min-height: 95vh;
   }
+  .logo8p {
+    display: block;
+    margin: 2%;
+  }
   .main8p {
     flex: 1;
+    height: 200px;
   }
-  
-  .main8p > h1 {
-    font-size: 5rem;
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    width: 25%;
+    text-align: left;
   }
-  
+  .tile-image8p {
+    height: 200px;
+  }
+  .left .card8p {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    flex: 2;
+  }
+  .right .card8p {
+    display: inline-block;
+    height: 200px;
+    flex: 3;
+  }
+  .card-title8p{
+    display: relative;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 20%;
+  }
+
+  .card-text8p {
+    font-size: 1rem;
+    width: 20%;
+  }
+
+  @media (max-width: 600px) {
+
+    /* CSS for screens below or equal to 600px wide */
+    .body8p {
+      height: 200px;
+      width: 200px;
+    }
+  }
+  @media (min-width: 319px) and (max-width: 480px) {
+    .body8p {
+      background-color: lightsalmon;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 1200px) {
+    .body8p {
+      background-color: powderblue;
+    }
+  }
+  @media (min-width: 1201px) and (max-width: 1600px) {
+    .body8p {
+    background-color: limegreen;
+  }
+}
+  @media (min-width: 1601px) {
+    .body8p {
+    background-color: seagreen
+  }
+}
   .footer8p {
     text-align: right;
     color: midnightblue;
@@ -801,3 +868,22 @@ div {
 /* ******************* ninthSection.html ********************** */
 
 /* ******************* tenthSection.html ********************** */
+/* Flex example */
+/* .h28flex {
+    background-color: green;
+}
+.flex-container8 {
+    display: flex;
+}
+.card8 {
+    background-color: blue;
+    border: 10px solid white;
+    height: 50px;
+    flex: 1;
+}
+.first8 {
+    flex: 2;
+}
+.second8 {
+    flex: 3;
+} */
