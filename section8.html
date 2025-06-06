@@ -8,35 +8,123 @@
     <title>Training</title>
 </head>
     <body id="bodyColor">
-        <nav>
-            <ul>
-                <li><a href="./index.html">Section 2 intro HTML</a></li>
-                <li><a href="./thirdSection.html">Section 3 intermediate HTML</a></li>
-                <li><a href="./fourthSection.html">Section 4 Multi-Page HTML</a></li>
-                    <ul>
-                        <li><a href="./fifthSection.html">Section 5 intro to CSS</a></li>
-                        <li><a href="./sixthSection.html">Section 6 CSS Properties</a></li>
-                        <li><a href="./seventhSection.html">Section 7 CSS Intermediate</a></li>
-                        <li><a href="./eighthSection.html">Section 8 CSS Advanced</a></li>
-                        <li><a href="./ninthSection.html">Section 9 CSS Flexbox</a></li>
-                        <li><a href="./tenthSection.html">Section 10 CSS Grid</a></li>
-                    </ul>    
-                <li><a href="./eleventhSection.html">Section 11 Bootstrap</a></li>
-                <li><a href="./twelfthSection.html">Section 12 Web Design School</a></li>
-                <li><a href="./thirteenthSection.html">Section 13 Capstone</a></li>
-                    <ul>
-                        <li><a href="./fourteenthSection.html">Section 14 Intro JavaScript ES6</a></li>
-                        <li><a href="./fifteenthSection.html">Section 15 JavaScript Intermediate</a></li>
-                        <li><a href="./sixteenthSection.html">Section 16 DOM</a></li>
-                        <li><a href="./seventeenthSection.html">Section 17 Challenge 1 : Dicee Game</a></li>
-                        <li><a href="./eighteenthSection.html">Section 18 Javasript Advanced DOM Manipulation</a></li>
-                    </ul>    
-                <li><a href="./nineteenthSection.html">Section 19 jQuery</a></li>
-                <li><a href="./twentiethSection.html">Section 20 Challenge 2: Simon Game</a></li>
-                <li><a href="./MyInfoPage.html">My Info Page</a></li>
-                <li><a href="./aboutContact.html">About &amp Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Navigation -->
+    <div class="navbar">
+        <a href="./MyInfoPage.html">My Info Page</a>
+        <a href="./aboutContact.html">About &amp Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">HTML
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="./section2.html">Section 2 "Intro to HTML"</a>
+            <a href="./section3.html">Section 3 "Intermediate HTML"</a>
+            <a href="./section4.html">Section 4 "Multi-Page Websites"</a>
+          </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">CSS
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="./section5.html">Section 5 Intro CSS</a>
+                <a href="./section6.html">Section 6 CSS Properties</a>
+                <a href="./section7.html">Section 7 Intermediate CSS</a>
+                <a href="./section8.html">Section 8 Advanced CSS</a>
+                <a href="./section9.html">Section 9 Flexbox</a>
+                <a href="./section10.html">Section 10 Grid</a>
+                <a href="./section11.html">Section 11 Bootstrap</a>
+                <a href="./section12.html">Section 12 Web Design School</a>
+                <a href="./section13.html">Section 13 Capstone 2</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">JavaScript
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./section14.html">Section 14 "Intro JS</a>
+              <a href="./section15.html">Section 15 "Intermediate JS"</a>
+              <a href="./section16.html">Section 16 "JS DOM"</a>
+              <a href="./section17.html">Section 17 "JS Challenge: Dicee Game"</a>
+              <a href="./section18.html">Section 18 "Advanced JS &amp DOM Manipulation "</a>
+              <a href="./section19.html">Section 19 "JS Library jQuery"</a>
+              <a href="./section20.html">Section 20 "JS Challenge: Simon Game"</a>
+            </div>
+          </div>
+    <!--       <div class="dropdown">
+            <button class="dropbtn">Unix
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./section1_2.html">Section 2 "Intro to HTML"</a>
+              <a href="./section3.html">Section 3 "Intermediate HTML"</a>
+              <a href="./section4.html">Section 4 "Multi-Page Websites"</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Node.js
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./section1_2.html">Section 2 "Intro to HTML"</a>
+              <a href="./section3.html">Section 3 "Intermediate HTML"</a>
+              <a href="./section4.html">Section 4 "Multi-Page Websites"</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Version Control
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./section1_2.html">Section 2 "Intro to HTML"</a>
+              <a href="./section3.html">Section 3 "Intermediate HTML"</a>
+              <a href="./section4.html">Section 4 "Multi-Page Websites"</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">APIs
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./section1_2.html">Section 2 "Intro to HTML"</a>
+              <a href="./section3.html">Section 3 "Intermediate HTML"</a>
+              <a href="./section4.html">Section 4 "Multi-Page Websites"</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Databases
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./section1_2.html">Section 2 "Intro to HTML"</a>
+              <a href="./section3.html">Section 3 "Intermediate HTML"</a>
+              <a href="./section4.html">Section 4 "Multi-Page Websites"</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Authentication/Security
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="./section1_2.html">Section 2 "Intro to HTML"</a>
+                  <a href="./section3.html">Section 3 "Intermediate HTML"</a>
+                  <a href="./section4.html">Section 4 "Multi-Page Websites"</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">React.js
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="./section1_2.html">Section 2 "Intro to HTML"</a>
+                  <a href="./section3.html">Section 3 "Intermediate HTML"</a>
+                  <a href="./section4.html">Section 4 "Multi-Page Websites"</a>
+                </div>
+              </div>
+          </div> -->
+          
+      </div>
+      <!-- Navigation END -->
         <h1>Advanced CSS</h1>
         <p>Span & Display: block, inline, inline-block, and none</p>
             <ol>
