@@ -37,7 +37,7 @@ body {
     margin: 0; /* Important for vertical align on mobile phones */
   }
   
-  /* Add a red background color to navbar links on hover */
+  /* Add a green background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: green;
   }
@@ -71,16 +71,16 @@ body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
-/* ******************* Index.html ********************** */
+/* ******************* Section 2 ********************** */
 
-/* ******************* thirdSection.html ********************** */
+/* ******************* Section 3 ********************** */
 
-/* ******************* fourthSection.html ********************** */
+/* ******************* Section 4 ********************** */
 /* #imageSec4 {
     border: solid 5px rgb(218, 5, 5);
     border-radius: 10px;
 } */
-/* ******************* fifthSection.html ********************** */
+/* ******************* Section 5 ********************** */
 
 /* .welcome {
     font-size: 2em;
@@ -183,7 +183,7 @@ p.note {
 #orange {
     color: orange;
 } */
-/* ******************* sixthSection.html ********************** */
+/* ******************* Section 6 ********************** */
 
 /* #rootSize {
     font-size: 30px;
@@ -357,7 +357,7 @@ p.note {
     text-transform: uppercase;
 } */
 
-/* ******************* seventhSection.html ********************** */
+/* ******************* Section 7 ********************** */
 
 
 /* #outer-box7 {
@@ -543,7 +543,7 @@ ul p.done71 {
     color: rgb(0, 40, 104);
 } */
 
-/* ******************* eighthSection.html ********************** */
+/* ******************* Section 8 ********************** */
 
 /* .span {
     display: inline;
@@ -842,9 +842,9 @@ ul p.done71 {
 
 
 
-/* ******************* ninthSection.html ********************** */
+/* ******************* Section 9 ********************** */
 
-/* ******************* tenthSection.html ********************** */
+/* ******************* Section 10 ********************* */
 /* Flex example */
 /* .h28flex {
     background-color: green;
