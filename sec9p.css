@@ -1,0 +1,158 @@
+/* Global */
+body {
+    font-family: "Sono", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation starts here */
+  /* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a green background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: green;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* Page starts Here */
+
+      /* Hint: What can you do with a media query and flexbox? */
+
+
+      @media (min-width: 1250px) and (max-width: 3600px) {
+    .pricing-container {
+        display: flex;
+    }
+    .pricing-plan {
+        flex-basis: 30%;
+        background-color: lightgray;
+        margin: 10px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .plan-title {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .plan-price {
+        font-size: 20px;
+        color: green;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .plan-features {
+        list-style: none;;
+        text-align: center;
+    }
+    .plan-button {
+        color: orange;
+        background-color: #333;
+        border: 3px solid orange;
+        border-radius: 45%;
+    }
+}
+@media (max-width: 1249px) {
+    .pricing-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: space-evenly;
+        align-items: center;
+        padding: 20px;
+    }
+    .pricing-plan {
+        background-color: lightgray;
+        margin: 10px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .plan-title {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .plan-price {
+        font-size: 20px;
+        color: green;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .plan-features {
+        list-style: none;;
+        text-align: center;
+    }
+    .plan-button {
+        color: orange;
+        background-color: #333;
+        border: 3px solid orange;
+        border-radius: 45%;
+    }
+   
+}

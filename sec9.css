@@ -120,13 +120,20 @@ Select all the elements that are the direct children of the .container class.
   .container3 {
     color: white;
     border: 5px solid gold;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+    gap: 10px; /* Adds space between items */
+    
+  }
+  .container3 > * {
+    flex: 1; /* Does not change container need to select child, if column it will show vertically, if row in is horizontal */
   }
 
   /*
 Select all the elements that are the direct
 children of the .container class.
   */
+
 
   .red {background-color: #eb4d4b;}
   .orange {background-color: #f0932b;}
