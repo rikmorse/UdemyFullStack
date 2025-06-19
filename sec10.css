@@ -121,6 +121,40 @@
       font-size: 18px;
       padding: 20px;
       border: 2px solid orangered;
+    } 
+    .containerIcons {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr ;
+      grid-template-rows: 1fr 1fr 1fr;
+      background-color: tan;
     }
-
-    
+.cowboy, .astronaut, .book{
+      color: black;
+      font-size: 50px;
+      padding: 20px;
+      border: 2px solid darkblue;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cowboy {
+      order: 1;
+      background-color: brown;
+      grid-area: 1 / 1 / 1 / 1;
+    }
+    .astronaut {
+      background-color: black;
+      order: 4;
+      grid-area: 2 / 2 / 2 / 2;
+    }
+    .book {
+      order: 2;
+      background-color: lightblue;
+      grid-column-start: 3;
+      grid-column-end: -1; /* -1 is the same as the last row or column in this case it would be 3, but we are  using -1 for an example */
+      grid-row-start: 1;
+      grid-row-end: -1;
+    }
