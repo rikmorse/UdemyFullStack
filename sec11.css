@@ -69,4 +69,10 @@
   /* Navigation End */
 
   /* Page Starts Here */
-  
+  /* TODO 4: Use flexbox to center the card in the vertical and horizontal center. */
+
+  .flex-container{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
