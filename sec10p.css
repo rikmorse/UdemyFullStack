@@ -81,14 +81,24 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
 */
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
 .mondrianContainer {
-  background-color: darkgoldenrod;
+  background-color: #F0F1EC;
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;  
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;  
   width: 748px;
   height: 748px;
+  margin: 20px;
 }
+/* Top Row */
 .mondrianBox1 {
   background-color: #E72F24;
   width: 320px;
@@ -101,29 +111,135 @@
 .mondrianBox2 {
   width: 419px;
   height: 414px;
-  grid-column: 2;
+  grid-column-start: 2;
+  grid-column-end: 5;
   grid-row: 1;
   border-bottom: #000 solid 9px;
 }
-.mondrianBox4 {
+/* Middle Row */
+.mondrianBox3 {
   width: 320px;
-  height: 285px;
+  height: 296px;
   grid-column: 1;
-  grid-row: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  border-right: #000 solid 9px;
+  border-bottom: #000 solid 9px;
+}
+.mondrianBox4 {
+  width: 360px;
+  height: 296px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
   border-right: #000 solid 9px;
   border-bottom: #000 solid 9px;
 }
 .mondrianBox5 {
-  width: 325px;
-  height: 285px;
-  grid-column: 2;
+  background-color: #004592;
+  width: 50px;
+  height: 130px;
+  grid-column: 4;
   grid-row: 2;
-  border: #000 solid 9px;
+  border-bottom: #000 solid 10px;
 }
-.mondrianBox7 {
+/* Bottom Row */
+.mondrianBox6 {
+  grid-column: 1;
+  grid-row: 4;
   width: 320px;
   height: 20px;
-  grid-column: 1;
-  grid-row: 3;
   border-right: #000 solid 9px;
 }
+.mondrianBox7 {
+  background-color: #F9D01E;
+  width: 198px;
+  height: 20px;
+  grid-column: 2;
+  grid-row: 4;
+  border-right: #000 solid 9px;
+}
+.mondrianBox8 {
+  background-color: #232629;
+  width: 153px;
+  height: 20px;
+  grid-column: 3;
+  grid-row: 4;
+  border-right: #000 solid 9px;
+}
+.mondrianBox9 {
+  grid-column: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  width: 50px;
+  height: 175px;
+  border-top: 9px solid #000;
+}
+h1 {
+  text-align: center;
+  color: #333;
+  font-family: Arial, sans-serif; 
+}
+h2 {
+  text-align: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+/* Solution */
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 748px;
+  width: 748px;
+  display: grid;
+  background-color: #000;
+  grid-template-columns: 320px 198px 153px 50px;
+  grid-template-rows: 414px 130px 155px 22px;
+  gap: 9px;
+}
+
+.item {
+  background-color: #F0F1EC;
+}
+
+.red {
+  background-color: #E72F24;
+}
+
+.white1 {
+  grid-column: span 3;
+}
+
+.white2 {
+  grid-row: span 2;
+}
+
+.white3 {
+  grid-area: 2 / 2 / 4 /4
+}
+
+.blue {
+  background-color: #004592;
+  border-bottom: 10px solid #000;
+}
+
+.white4 {
+  grid-row: span 2;
+}
+
+.yellow {
+  background-color: #F9D01E;
+}
+
+.black {
+  background-color: #232629;
+} */
