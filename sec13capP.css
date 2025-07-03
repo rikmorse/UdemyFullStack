@@ -102,9 +102,5 @@ body {
  */
  .container a  {
     text-decoration: solid;
-    background-color: none;
     color: white;
- }
- .container a:hover {
-    background-color: #205295;
  }
