@@ -126,5 +126,117 @@
       </div>
 <!-- End of Navigation -->
 
+<!-- Page Starts Here -->
+<div class="container">
+    <h1>Section 14: Intro to JavaScript</h1>
+    <p class="age"></p>
+</div>    
+
+<script src="./index.js"></script>
 </body>
 </html>
+<h1>Javascript in Dev Tools learning notes</h1>
+<p>var dogAge = prompt("Please enter the age of your dog to find their human age!");</p>
+<p>var humanAge = ((dogAge - 2) * 4 + 21);</p>
+<p>console.log ("You dog is " + humanAge + " human years old!");</p>
+
+<h2>Function moving </h2>
+<p> function getMilk(money) {</p>
+  <p>  console.log("Leave house");</p>
+  <p>console.log("Move right");</p>
+  <p>console.log("Move right");</p>
+  <p>console.log("Move right");</p>
+  <p>console.log("Buy Milk");</p>
+  <p>console.log("Move left");</p>
+  <p>console.log("Move left");</p>
+  <p>console.log("Move left");</p>
+    
+  <p>var bottles = Math.floor(money / 2.5);</p>
+    
+    <p>console.log("Return home with " + bottles + " bottles of milk please.");</p>}
+        <p>getMilk(10);</p>
+
+        <h3>How many days, weeks, months, left in life.</h3>
+<p> function lifeInWeeks(age) {</p>
+/************Don't change the code above************/    
+  
+<p>Write your code here.</p>
+<p>var years = 90 - age;<br>
+var months = years * 12;<br>
+var weeks = years * 52;<br>
+var days = years * 365</p>
+        
+<p>console.log("You have " + days + " days, " + weeks + " weeks, " + "and " + months + " months left.");
+ }</p>
+ </p>lifeInWeeks(54);</p>
+
+
+<!-- More in depth functions -->
+<h4>More in depth functions!</h4>
+<p></p>function getMilk(money) { <br>
+var numberOfBottles = Math.floor(money / 1.5);</p>
+
+<p>console.log("You bought " + numberOfBottles + " bottles of milk!" + " And, your change is " + change);</p>
+
+<p>return money % 1.5;</p>
+    
+<p>}</p>
+
+<p>var change = getMilk(prompt("How many bottles of milk would you like?"));
+console.log(change);</p>
+
+<!-- More in depth functions -->
+
+<p> function getMilk(money) {<br>
+
+ console.log("buy " + calcBottles(money, 1.5) + " bottles of milk and your change is " + change);<br>
+
+ return calcChange(money, 1.5);
+ }</p>
+
+
+<!-- // function calcBottles (startingMoney, costPerBottle) {
+//     var numberOfBottles = Math.floor(startingMoney / costPerBottle);
+//     return numberOfBottles;
+// }
+
+// function calcChange (startingAmount, costPerBottle) {
+//     var change = startingAmount % costPerBottle;
+// }
+
+// getMilk(prompt("How many bottles of milke would you like?"));
+-->
+
+<h3>BMI results using function with Math.pow and Math.round.</h3>
+<p>BMI = weight(kg) / height squared(m squared)
+65kg and 1.8m </p>
+
+
+
+<!--  Create your function below this line. -->
+<p>
+The first parameter should be the weight and the second should be the height.<br>
+
+function bmiCalculator(weight, height) { <n>
+
+    var bmi = weight / Math.pow(1.8,2); //Math.pow(x,y) | x = base y = exponent<br>
+
+    console.log("Your BMI is " + Math.round(bmi)); // Math.round will correctly round answer if .5 then it goes up, if .49 then it goes down.<br>
+
+    return Math.round(bmi);<br>
+
+}<br>
+
+var bmi = bmiCalculator(65, 1.8);<br></p>
+
+
+<p>If my weight is 65Kg and my height is 1.8m, I should be able to call your function like this:<br>
+
+var bmi = bmiCalculator(65, 1.8);<br> 
+
+bmi should equal 20 when it's rounded to the nearest whole number.
+
+</p>
+
+<footer><img src="./images/LogoRm.png" height="75px" ></footer>
+</p>
