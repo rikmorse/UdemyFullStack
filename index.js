@@ -247,8 +247,31 @@ Try to run your code in this Repl.it playground and check it against the known l
 
         /* 99 Bottles on the wall Challenge */
 
-
-
+/*         var numberOfBottles = 99
+        while (numberOfBottles >= 2) {
+            var bottleWord = "bottles";
+            if (numberOfBottles === 1) {
+                bottleWord = "bottle";
+            } else {
+            console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+            console.log(numberOfBottles + " " + bottleWord + " of beer, Take one down, pass it around,");
+            numberOfBottles--;
+            console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+            
+            } */
+            
+//var numberOfBottles = 99;
+var bottleWord = "bottles";
+for (numberOfBottles = 99; numberOfBottles = 0; numberOfBottles--); {
+    if (numberOfBottles === 1) {
+        bottleWord = "bottle";
+    } else {
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+    console.log(numberOfBottles + " " + bottleWord + " of beer, Take one down, pass it around,");
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+} 
+}
+       
 
 
 
