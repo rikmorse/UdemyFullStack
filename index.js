@@ -274,7 +274,7 @@ for (numberOfBottles = 99; numberOfBottles = 0; numberOfBottles--); {
 
 /* Fibonacci challenge */
 
-function fibonacciGenerator(n) {
+/* function fibonacciGenerator(n) {
     // Handle edge cases for n = 0 and n = 1
     var output = [];
     if (n === 1) {
@@ -290,8 +290,9 @@ function fibonacciGenerator(n) {
     return output;
 }
   output = fibonacciGenerator(10);
-  console.log(output);
+  console.log(output); */
        
+  alert ('Hello Everyone');
 
 
 
@@ -414,6 +415,22 @@ bmi should equal 20 when it's rounded to the nearest whole number.
 // }
 //     alert("Go home and start over!!! " + loveScore + " % Boooooooooo")
 
+/* ** Love Calculator **
+
+var woman = prompt("What is your name Mrs?");
+var man = prompt("What is your name Sir?");
+var loveScore = Math.random() * 100;
+loveScore = Math.floor(loveScore) + 1;
+if (loveScore === 100) {
+    alert("Mrs. " + woman + " & Mr. " + man + " You are a great match, perfect score " + loveScore + " %")   <br> 
+} else if (loveScore >= 75){
+    alert("Mrs. " + woman + " & Mr. " + man + " You are a match, with a score of " + loveScore + " %")<br>
+} else if (loveScore > 25 && loveScore < 75){
+    alert("Mrs. " + woman + " & Mr. " + man + " Your love score is " + loveScore + " %. Not to Shabby" );
+} else if (loveScore >= 10 && loveScore <= 25){
+    alert("Mrs. " + woman + " & Mr. " + man + " Your love score is " + loveScore + " %, Time to move on!");
+} else 
+    alert("Go home and start over!!! " + loveScore + " % Boooooooooo") */
 
 // function bmiCalculator (weight, height) {
 //     var weight = Math.random() * 250;
