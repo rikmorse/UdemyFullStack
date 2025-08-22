@@ -261,7 +261,7 @@ Try to run your code in this Repl.it playground and check it against the known l
             } */
             
 //var numberOfBottles = 99;
-var bottleWord = "bottles";
+/* var bottleWord = "bottles";
 for (numberOfBottles = 99; numberOfBottles = 0; numberOfBottles--); {
     if (numberOfBottles === 1) {
         bottleWord = "bottle";
@@ -270,7 +270,27 @@ for (numberOfBottles = 99; numberOfBottles = 0; numberOfBottles--); {
     console.log(numberOfBottles + " " + bottleWord + " of beer, Take one down, pass it around,");
     console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
 } 
+} */
+
+/* Fibonacci challenge */
+
+function fibonacciGenerator(n) {
+    // Handle edge cases for n = 0 and n = 1
+    var output = [];
+    if (n === 1) {
+      return [0];
+    } else if (n === 2) {
+        output = [0, 1,];
+    } else {
+        output = [0, 1];
+        for (var i = 2; i < n; i++){
+        output.push(output[output.length - 2] + output[output.length - 1]);
+    }
+    }
+    return output;
 }
+  output = fibonacciGenerator(10);
+  console.log(output);
        
 
 
