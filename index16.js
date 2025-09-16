@@ -39,3 +39,11 @@ document.querySelector("li a");*/
 //document.querySelector("input#checkBox");
 /* class and tag */
 //document.querySelector(".list a");
+/* query selector all using id and class below selectorAll for any id / class etc*/
+/* document.querySelectorAll("#myList .list"); */
+
+/* innerHTML is everything between Tag textContent is only the text between not other tags inside the innerHTML tag selected. */
+
+// Change the attribute of an element
+/* document.querySelector("a").getAttribute("href"); */
+/* document.querySelector("a").setAttribute("href", "https://www.bing.com"); */
