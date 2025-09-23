@@ -78,9 +78,12 @@
   .dice {
     text-align: center;
     display: inline-block;
-  
   }
-  
+  .img1, .img2 {
+    border: #0af506 10px solid;
+    padding: 0 5px;
+    border-radius: 20px;
+  }
   body {
     background-color: #000000;
   }
