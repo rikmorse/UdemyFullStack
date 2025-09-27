@@ -1,5 +1,5 @@
 
-function rollDice(dice1, dice2) {
+/* function rollDice(dice1, dice2) {
     dice1 = Math.floor(Math.random() * 6) + 1;
     dice2 = Math.floor(Math.random() * 6) + 1;
     console.log(dice1);
@@ -15,6 +15,6 @@ function rollDice(dice1, dice2) {
     }   
     return [dice1, dice2];
 }
-rollDice();
+rollDice(); */
 
 
