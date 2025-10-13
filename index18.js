@@ -15,10 +15,12 @@
 }); */
 
 // Simplified more
-var numberOfDrumButtons = document.querySelectorAll(".drum").length;
+var numberOfDrumButtons = document.querySelectorAll("#drumId").length;
 
 for (var i = 0; i < numberOfDrumButtons; i++) {
-    document.querySelectorAll(".drum")[i].addEventListener("click", function () { 
-        alert("I got clicked");
+    document.querySelectorAll("#drumId")[i].addEventListener("click", function () { 
+       //alert("I got clicked");
+  document.querySelector("#drumId").setAttribute("src", "./sounds/tom" + audio + ".mp3");
+        audio.play();  
 });
 }
