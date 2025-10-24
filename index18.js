@@ -36,6 +36,8 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
 
     // added to complete new function below for keydown event listener
     makeSound(buttonInnerHTML);
+    // added to complete button animation function
+    buttonAnimation(buttonInnerHTML);
     // Added switch statement to play different sound for each button
 /*     switch (this.innerHTML) {
       case "w":
@@ -84,6 +86,8 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
 document.addEventListener("keydown", function(event) {
   //console.log(event);
   makeSound(event.key);
+  // added to complete button animation function
+  buttonAnimation(event.key);
 });
 
 function makeSound(key) {
@@ -120,6 +124,15 @@ function makeSound(key) {
       default: console.log(buttonInnerHTML);
   }
 }
+
+function buttonAnimation(currentKey) {
+  var activeButton = document.querySelector("." + currentKey);
+  activeButton.classList.add("pressed");
+  setTimeout(function() {
+    activeButton.classList.remove("pressed");
+  }, 100);
+}
+
 
 // removed for adding actual sound to each button
 /* var audio = new Audio("./sounds/tom-1.mp3");
