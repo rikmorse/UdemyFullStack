@@ -29,15 +29,15 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
 // finished sounds for each button with switch statement with this and switch
 
 // Detecting button press
-var numberOfDrumButtons = document.querySelectorAll("#drumId").length;
+/* var numberOfDrumButtons = document.querySelectorAll("#drumId").length;
 for (var i = 0; i < numberOfDrumButtons; i++) {
   document.querySelectorAll("#drumId")[i].addEventListener("click", function () {
-    var buttonInnerHTML = this.innerHTML;
+    var buttonInnerHTML = this.innerHTML; */
 
     // added to complete new function below for keydown event listener
-    makeSound(buttonInnerHTML);
+    /* makeSound(buttonInnerHTML); */
     // added to complete button animation function
-    buttonAnimation(buttonInnerHTML);
+    /* buttonAnimation(buttonInnerHTML); */
     // Added switch statement to play different sound for each button
 /*     switch (this.innerHTML) {
       case "w":
@@ -80,14 +80,14 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
         audio.play();
       } */
   //}
-});
-}
+/* });
+} */
 // Keydown event listener to play sound when key is pressed
-document.addEventListener("keydown", function(event) {
+/* document.addEventListener("keydown", function(event) { */
   //console.log(event);
-  makeSound(event.key);
+  /* makeSound(event.key); */
   // added to complete button animation function
-  buttonAnimation(event.key);
+/*   buttonAnimation(event.key);
 });
 
 function makeSound(key) {
@@ -131,7 +131,7 @@ function buttonAnimation(currentKey) {
   setTimeout(function() {
     activeButton.classList.remove("pressed");
   }, 100);
-}
+} */
 
 
 // removed for adding actual sound to each button
@@ -268,3 +268,11 @@ console.log(houseKeeper3); */
   }
 };
 }); */
+
+
+// Minified JS code example from all code above drumkit section only.
+// used www.minifier.org to minify code
+var numberOfDrumButtons=document.querySelectorAll("#drumId").length;for(var i=0;i<numberOfDrumButtons;i++){document.querySelectorAll("#drumId")[i].addEventListener("click",function(){var buttonInnerHTML=this.innerHTML;makeSound(buttonInnerHTML);buttonAnimation(buttonInnerHTML)})}
+document.addEventListener("keydown",function(event){makeSound(event.key);buttonAnimation(event.key)});function makeSound(key){switch(key){case "w":var tom1=new Audio("./sounds/crash.mp3");tom1.play();break;case "a":var kickBass=new Audio("./sounds/kick-bass.mp3");kickBass.play();break;case "s":var snare=new Audio("./sounds/snare.mp3");snare.play();break;case "d":var tom2=new Audio("./sounds/tom-1.mp3");tom2.play();break;case "j":var tom3=new Audio("./sounds/tom-2.mp3");tom3.play();break;case "k":var tom4=new Audio("./sounds/tom-3.mp3");tom4.play();break;case "l":var crash=new Audio("./sounds/tom-4.mp3");crash.play();break;default:console.log(buttonInnerHTML)}}
+function buttonAnimation(currentKey){var activeButton=document.querySelector("."+currentKey);activeButton.classList.add("pressed");setTimeout(function(){activeButton.classList.remove("pressed")},100)}
+
