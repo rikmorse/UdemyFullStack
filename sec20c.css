@@ -71,14 +71,14 @@
   body {
     text-align: center;
     font-family: Arial, sans-serif;
-    background-color: navy;
+    background-color: yellow;
   }
   .nosifer-regular {
     font-family: "Nosifer", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 48px;
-    color: beige;
+    color: black;
   }
   
   .container {
@@ -98,15 +98,16 @@
     font-size: 16px;
     color: black;
   }
-  .btnGreen {
-    background-color: green;
+  .btn1 {
+    background-color: orange;
   }
-  .btnRed {
+  .btn2 {
+    background-color: black;
+    color: red;
+  }
+  .btn3 {
     background-color: red;
   }
-  .btnYellow {
-    background-color: yellow;
-  }
-  .btnBlue {
-    background-color: blue;
+  .btn4 {
+    background-color: darkmagenta;
   }
