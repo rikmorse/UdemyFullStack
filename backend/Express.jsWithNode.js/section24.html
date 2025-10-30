@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Backend</title>
+  <link rel="stylesheet" href="sec24.css">
+  <link rel="icon" href="./images/iconGreenQ.png" type="image/QfavIcon"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Uncomment the below for Halloween text, Keep for futrue use. -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+    <!-- Navigation beginning -->
+    <div class="navbar">
+        <a href="./MyInfoPage.html">My Info Page</a>
+        <a href="./aboutContact.html">About &amp Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">HTML
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="./section2.html">Section 2 "Intro to HTML"</a>
+            <a href="./section3.html">Section 3 "Intermediate HTML"</a>
+            <a href="./section4.html">Section 4 "Multi-Page Websites"</a>
+          </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">CSS
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="./section5.html">Section 5 Intro CSS</a>
+                <a href="./section6.html">Section 6 CSS Properties</a>
+                <a href="./section7.html">Section 7 Intermediate CSS</a>
+                <a href="./section8.html">Section 8 Advanced CSS</a>
+                <a href="./section9.html">Section 9 Flexbox</a>
+                <a href="./section10.html">Section 10 Grid</a>
+                <a href="./section11.html">Section 11 Bootstrap</a>
+                <a href="./section12.html">Section 12 Web Design School</a>
+                <a href="./section13.html">Section 13 Capstone 2</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">JavaScript
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./section14.html">Section 14 "Intro JS</a>
+              <a href="./section15.html">Section 15 "Intermediate JS"</a>
+              <a href="./section16.html">Section 16 "JS DOM"</a>
+              <a href="./section17.html">Section 17 "JS Challenge: Dicee Game"</a>
+              <a href="./section18.html">Section 18 "Advanced JS &amp DOM Manipulation "</a>
+              <a href="./section19.html">Section 19 "JS Library jQuery"</a>
+              <a href="./section20c.html">Section 20 "JS Challenge: Simon Game"</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Backend
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./section22.html">Section 22 "Backend Web Development"</a>
+              <a href="./section23.html">Section 23 "Node.js"</a>
+              <a href="./section24.html">Section 24 "Express.js with Node.js"</a>
+              <a href="./section25.html">Section 25 "EJS"</a>
+              <a href="./section26.html">Section 26 "Capstone Project 26"</a>
+              <a href="./section27.html">Section 27 "Git, Github and Version Control"</a>
+              <a href="./section28.html">Section 28 "Application Programming Interfaces APIs"</a>
+              <a href="./section29.html">Section 29 "Capstone Project - Use a Public API"</a>
+              <a href="./section30.html">Section 30 "Build Your Own API"</a>
+              <a href="./section31.html">Section 31 "Databases"</a>
+              <a href="./section32.html">Section 32 "SQL"</a>
+              <a href="./section33.html">Section 33 "PostgreSQL"</a>
+              <a href="./section34.html">Section 34 "Capstone Project - Book Notes"</a>
+              <a href="./section35.html">Section 35 "Authentication and Security - Handling Credentials & Designing a Secure Login"</a>
+              <a href="./section36.html">Section 36 "React.js"</a>
+              <a href="./section37.html">Section 37 "Web3 Decentralized App (DApp) Development with the Internet Computer"</a>
+              <a href="./section38.html">Section 38 "Build Your First Defi (Decentralized Finance) DApp - DBANK"</a>
+              <a href="./section39.html">Section 39 "Deploying to the ICP Live Blockchanin"</a>
+              <a href="./section40.html">Section 40 "Building DApps on ICP with a React Frontend"</a>
+              <a href="./section41.html">Section 41 "Create Your Own Crypto Token"</a>
+              <a href="./section42.html">Section 42 "Minting NFTs and Building an NFT Marketplace like OpenSea"</a>
+          </div>
+      </div> 
+    </div>      
+<!-- End of Navigation --> 
+ <h1>Section 24: Express.js with Node.js</h1>
+ <div class="container">
+    <h2>What is Express.js?</h2>
+    <p>Express.js is a popular web application framework for Node.js that simplifies the process of building web applications and APIs. It provides a robust set of features for web and mobile applications, making it easier to handle routing, middleware, and HTTP requests and responses.</p>
+    <h2>Key Features of Express.js</h2>
+    <ul>
+        <li>Routing: Express.js allows you to define routes for different HTTP methods (GET, POST, PUT, DELETE) and URL patterns, making it easy to handle various endpoints in your application.</li>
+        <li>Middleware: Express.js uses middleware functions to process requests and responses. Middleware can be used for tasks such as logging, authentication, parsing request bodies, and more.</li>
+        <li>Template Engines: Express.js supports various template engines (like EJS, Pug, Handlebars) to render dynamic HTML pages.</li>
+        <li>Static File Serving: Express.js can serve static files (like images, CSS, JavaScript) easily using built-in middleware.</li>
+        <li>Extensibility: Express.js has a large ecosystem of third-party middleware and plugins that can be integrated to add additional functionality to your application.</li>  
+    </ul>
+</div>
+<div class="container">
+    <h2>Setting Up Express.js</h2>
+    <p>To get started with Express.js, you need to have Node.js installed on your machine. You can then create a new project and install Express.js using npm (Node Package Manager).</p>
+    <pre><code>npm init -y
+npm install express</code></pre>
+    <p>Once installed, you can create a simple Express.js server:</p>
+    <pre><code>const express = require('express');
+const app = express();
+const port = 3000;  
+app.get('/', (req, res) =&gt; {
+  res.send('Hello World!');
+});  
+app.listen(port, () =&gt; {
+  console.log(`Example app listening at http://localhost:${port}`);
+});</code></pre>
+    <p>This code sets up a basic Express.js server that listens on port 3000 and responds with "Hello World!" when the root URL is accessed.</p>
+    <h2>Steps for creating Express Server</h2>
+    <ol>
+        <li>Create directory.</li>
+        <li>Create index.js file.</li>
+        <li>Initialize NPM.</li>
+        <li>Install the Express package.</li>
+        <li>Write Server application in index.js</li>
+        <li>Start Server.</li>
+</div>
+
+
+
+
+
+<script src="sec24.js" charset="utf-8"></script>
+</body>
+</html>
