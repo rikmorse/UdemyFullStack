@@ -2,9 +2,9 @@
 //console.log("Hello World from Node.js!");
 
 /* Write and Reading a file with fs file */
-/* import fs from "fs";
+import fs from "fs";
   
-fs.writeFile('message.txt', "Hello Richard Morse", (err) => {
+fs.writeFile('message.txt', "Hello Richard Morse, this is a test", (err) => {
     if (err) throw err;
     console.log('The file has been saved!');
   });
@@ -12,7 +12,7 @@ fs.writeFile('message.txt', "Hello Richard Morse", (err) => {
 fs.readFile("message.txt", "utf8", (err, data) => {
   if (err) throw err;
   console.log(data);
-}); */
+});
 
 
 //var generateName = require("sillyname");
