@@ -3,7 +3,7 @@
 //The password is ILoveProgramming
 
 import express from "express";
-import bodyParser from "body-parser";
+import bodyParser from "body-parser";  // Can be removed is is now standard in express
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -14,6 +14,7 @@ const port = 3000;
 var userIsAuthorised = false;
 
 app.use(bodyParser.urlencoded({ extended: true }));
+// after removing body-parser above you can change to | app.use(expres.urlencoded({ extednded: true}));
 
 function passwordCheck(req, res, next) {
   const password = req.body["password"];
