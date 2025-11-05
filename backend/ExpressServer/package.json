@@ -1,16 +1,16 @@
 {
-  "name": "expressserver",
+  "name": "3.3-postman",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "RMorse",
   "license": "ISC",
-  "type": "module",
   "dependencies": {
-    "express": "^5.1.0"
+  "express": "^4.18.2"
   }
 }

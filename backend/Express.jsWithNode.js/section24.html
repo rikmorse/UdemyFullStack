@@ -125,7 +125,47 @@ app.listen(port, () =&gt; {
         <li>Write Server application in index.js</li>
         <li>Start Server.</li>
 </div>
+<div class="container">
+    <h2>HTTP status codes</h2>
+    <p>Meaning of codes from the 100's - 500's</p>
+    <ol>
+        <li>100's - Informational responses</li>
+        <li>200's - Successful responses</li>
+        <li>300's - Redirection messages</li>
+        <li>400's - Client error responses</li>
+        <li>500's - Server error responses</li>
+    </ol>
+    <ol>
+        <li>1** Hold On - </li>
+        <li>2** Here you go</li>
+        <li>3** Go away</li>
+        <li>4** You fucked up (Client Side)</li>
+        <li>5** I fucked up (Server Side)</li>
+    </ol>
 
+</div>
+<div class="container">
+    <h2>Express Middleware</h2>
+    <p>Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. Middleware can perform tasks such as logging, authentication, parsing request bodies, and more.</p>
+    <pre><code>const express = require('express');
+const app = express();
+// Middleware function to log request details
+app.use((req, res, next) =&gt; {
+  console.log(`${req.method} ${req.url}`);
+  next(); // Call the next middleware function
+});
+app.get('/', (req, res) =&gt; {
+  res.send('Hello World!');
+});
+app.listen(3000, () =&gt; {
+  console.log('Server is running on port 3000');
+});</code></pre>
+    <p>In this example, a middleware function is defined using app.use() to log the HTTP method and URL of each incoming request.</p>
+</div>
+<div class="container">
+    <h2>Conclusion</h2>
+    <a href="../ExpressMiddleware/3.4middleware/public/index.html">Express Middleware</a>
+</div>
 
 
 
