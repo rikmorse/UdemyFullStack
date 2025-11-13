@@ -8,14 +8,27 @@ const port = 3000;
 //Hint 1: CSS files are static files!
 //Hint 2: The header and footer are partials.
 //Hint 3: Add the CSS link in header.ejs
+app.use(express.static("public"));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 //Step 4 - Add a dynamic year to the footer.
 //Hint: Google to find out how to get the current year using JS.
+app.get("partials/footer.ejs", (req, res) => {
+const currentDate = new Date(); // Creates a new Date object representing the current date and time
+const currentYear = currentDate.getFullYear(); // Extracts the four-digit year from the Date object
+console.log(currentYear); // Prints the current year to the console
+
+res.render("partials/footer.ejs", {
+  year: currentYear,})
+});
+
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   //Step 1 - Make the get route work and render the index.ejs file.
+  res.render("index.ejs");
 });
 
 app.post("/submit", (req, res) => {
@@ -26,7 +39,29 @@ app.post("/submit", (req, res) => {
   //scroll down to see the two arrays.
   //2. Send the index.ejs as a response and add the adjective and noun to the res.render
   //3. Test to make sure that the random words display in the h1 element in index.ejs
-});
+  let randomAdjective = Math.floor(Math.random() * adj.length);
+  let randomNounChose = Math.floor(Math.random() * noun.length);
+
+/* function randomAdj(adj) {          
+  let randomAdjective = Math.floor(Math.random() * adj.length);
+  let randomAdjName = adj[randomAdjective];
+  return randomAdjName;
+}
+console.log(randomAdj(adj));
+
+  function randomNoun(noun) {
+    let randomNounChose = Math.floor(Math.random() * noun.length);
+    let randomNounName = noun[randomNounChose];
+    return randomNounName;
+  }
+  console.log(randomNoun(noun));
+
+const generatedName = randomAdjName + " " + randomNounName;
+
+  res.render("/index.ejs", {
+    nameG: generatedName,})
+*/
+}); 
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
