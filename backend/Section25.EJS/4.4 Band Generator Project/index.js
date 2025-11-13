@@ -8,19 +8,24 @@ const port = 3000;
 //Hint 1: CSS files are static files!
 //Hint 2: The header and footer are partials.
 //Hint 3: Add the CSS link in header.ejs
+
+
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Step 4 - Add a dynamic year to the footer.
 //Hint: Google to find out how to get the current year using JS.
-app.get("partials/footer.ejs", (req, res) => {
+
+// My attempt at adding current year to footer: failed was simple as adding <%= new Date().getFullYear() %> into the html | footer.ejs file.
+
+/* app.get("partials/footer.ejs", (req, res) => {
 const currentDate = new Date(); // Creates a new Date object representing the current date and time
 const currentYear = currentDate.getFullYear(); // Extracts the four-digit year from the Date object
 console.log(currentYear); // Prints the current year to the console
 
 res.render("partials/footer.ejs", {
   year: currentYear,})
-});
+}); */
 
 
 
@@ -39,9 +44,11 @@ app.post("/submit", (req, res) => {
   //scroll down to see the two arrays.
   //2. Send the index.ejs as a response and add the adjective and noun to the res.render
   //3. Test to make sure that the random words display in the h1 element in index.ejs
-  let randomAdjective = Math.floor(Math.random() * adj.length);
-  let randomNounChose = Math.floor(Math.random() * noun.length);
+  const randomAdjective = adj[Math.floor(Math.random() * adj.length)];
+  const randomNounChose = noun[Math.floor(Math.random() * noun.length)];
+  res.render("index.ejs", { adjective: randomAdjective, noun: randomNounChose });
 
+  // My attempt, way over thought it.  Great Job Mr. Morse. LOL
 /* function randomAdj(adj) {          
   let randomAdjective = Math.floor(Math.random() * adj.length);
   let randomAdjName = adj[randomAdjective];
