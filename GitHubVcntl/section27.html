@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub</title>
+    <link rel="stylesheet" href="sec27.css"/>
+    <link rel="icon" href="../images/iconGreenQ.png" type="image/QfavIcon"/>
+</head>
+<body>
+    <!-- Navigation beginning -->
+    <div class="navbar">
+        <a href="./MyInfoPage.html">My Info Page</a>
+        <a href="./aboutContact.html">About &amp Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">HTML
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="./section2.html">Section 2 "Intro to HTML"</a>
+            <a href="./section3.html">Section 3 "Intermediate HTML"</a>
+            <a href="./section4.html">Section 4 "Multi-Page Websites"</a>
+          </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">CSS
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="./section5.html">Section 5 Intro CSS</a>
+                <a href="./section6.html">Section 6 CSS Properties</a>
+                <a href="./section7.html">Section 7 Intermediate CSS</a>
+                <a href="./section8.html">Section 8 Advanced CSS</a>
+                <a href="./section9.html">Section 9 Flexbox</a>
+                <a href="./section10.html">Section 10 Grid</a>
+                <a href="./section11.html">Section 11 Bootstrap</a>
+                <a href="./section12.html">Section 12 Web Design School</a>
+                <a href="./section13.html">Section 13 Capstone 2</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">JavaScript
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./section14.html">Section 14 "Intro JS</a>
+              <a href="./section15.html">Section 15 "Intermediate JS"</a>
+              <a href="./section16.html">Section 16 "JS DOM"</a>
+              <a href="./section17.html">Section 17 "JS Challenge: Dicee Game"</a>
+              <a href="./section18.html">Section 18 "Advanced JS &amp DOM Manipulation "</a>
+              <a href="./section19.html">Section 19 "JS Library jQuery"</a>
+              <a href="./section20c.html">Section 20 "JS Challenge: Simon Game"</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Backend
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./section22.html">Section 22 "Backend Web Development"</a>
+              <a href="./section23.html">Section 23 "Node.js"</a>
+              <a href="./section24.html">Section 24 "Express.js with Node.js"</a>
+              <a href="./section25.html">Section 25 "EJS"</a>
+              <a href="./section26.html">Section 26 "Capstone Project 26"</a>
+              <a href="./section27.html">Section 27 "Git, Github and Version Control"</a>
+              <a href="./section28.html">Section 28 "Application Programming Interfaces APIs"</a>
+              <a href="./section29.html">Section 29 "Capstone Project - Use a Public API"</a>
+              <a href="./section30.html">Section 30 "Build Your Own API"</a>
+              <a href="./section31.html">Section 31 "Databases"</a>
+              <a href="./section32.html">Section 32 "SQL"</a>
+              <a href="./section33.html">Section 33 "PostgreSQL"</a>
+              <a href="./section34.html">Section 34 "Capstone Project - Book Notes"</a>
+              <a href="./section35.html">Section 35 "Authentication and Security - Handling Credentials & Designing a Secure Login"</a>
+              <a href="./section36.html">Section 36 "React.js"</a>
+              <a href="./section37.html">Section 37 "Web3 Decentralized App (DApp) Development with the Internet Computer"</a>
+              <a href="./section38.html">Section 38 "Build Your First Defi (Decentralized Finance) DApp - DBANK"</a>
+              <a href="./section39.html">Section 39 "Deploying to the ICP Live Blockchanin"</a>
+              <a href="./section40.html">Section 40 "Building DApps on ICP with a React Frontend"</a>
+              <a href="./section41.html">Section 41 "Create Your Own Crypto Token"</a>
+              <a href="./section42.html">Section 42 "Minting NFTs and Building an NFT Marketplace like OpenSea"</a>
+          </div>
+      </div> 
+    </div>      
+<!-- End of Navigation --> 
+
+<!-- Page starts here -->
+<h1>Version Control</h1>
+<h2>pwd | cd | mkdir | touch | open | start | rm</h2>
+<ul>
+  <li>pwd = Print Working Directory</li>
+  <li>cd = Change Directory</li>
+  <li>mkdir = Make Directory</li>
+  <li>Touch = create a new file</li>
+  <li>Open = Opens file inside of VS code using | open -a /Application/ Visual\ Studio\ Code.app filename</li>
+  <li>Start = </li>
+  <li>Rm = remove</li>
+</ul>
+<ol>
+  <li>git init | initializes git for VSCode and creates a .git folder</li>
+  <li>git status | Will show you if you have any status changes.</li> 
+    <ul>
+      <li>On branch main | No commits yet | untracked files: (use "git add filename..." to include in what will be committed) Filename... listed below. Nothing added to commit but untracked files present (use "git add" to track)</li>
+    </ul>
+  <li>git add | adds file to staging area. For all files in that directory | git add .  | this will add all the new files at one time.</li>
+    <ul>
+      <li>run git status again</li>
+      <li>On branch main | No commits yet | Changes to be comitted: (use | git rm --cached "filename ..." to unstage) | new file: "filename ..."</li>
+    </ul>
+  <li>commit -m | commits file and -m is to add a message</li>
+  <li>git log | will show you: commit hash (HEAD -> main) | Author: Richard Morse and email should appear. | Date: Fri May 26 14:23:10 2025 +0100 | Filename... committed.</li>
+  <li>git diff "filename ..." show you versions of the file if you want to revert back to older code</li>
+  <li><code>push -u (remote name) (branch name)</code>Links local and remote repositories</li>
+  <li><code>git push -u origin main</code>pushes new code changes to staging area</li>
+
+</ol>
+
+
+
+</body>
+</html>
