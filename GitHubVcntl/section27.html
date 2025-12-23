@@ -126,9 +126,51 @@
       <li>ehthumbs.db</li>
       <li>Desktop.ini</li>
       <li>._*</li>
+    </ol>  
+</ul>
+<ul>
+  <li>GIT CLONE</li>
+  <li>Copies branch to add revise or modify code</li>
+  <li>git clone url</li> <!-- clones url version of code -->
+  <li>example | git clone https://github.com/inolen/quakejs.git</li><!-- quake game running in browser -->
+  <li>Click on the README.md</li>
+  <li>Navigate to Running Locally section and follow steps</li>
+  <ol>
+    <li>npm install</li>
+    <li>echo '{ "content": "content.quakejs.com" }' > bin/web.json</li>
+    <li>node bin/web.js --config ./web.json</li> <!-- After this line is entered you should see web server is now listening on ::::8080 -->
+    <li>Open your browser and go to http://localhost:8080/ or 0.0.0.0:8080</li>
+  </ol>
+  <li>For wordle go here | https://github.com/clupasq/word-mastermind</li>
+</ul>
+<ul>
+  <li>Branching and Merging</li>
+  <ol>
+    <li>git branch (branch name) | creates a new branch</li>
+    <li>git checkout (branch name) | switches to that branch</li>
+    <li>git merge (branch name) | merges that branch into the current branch you are on</li>
+    <li>git branch -d (branch name) | deletes that branch</li>
+  </ol>
+</ul>
+<ul>
+  <li>Forking and Pull Requests</li>
+  <ol>
+    <li>Forking | creates a copy of a repository under your github account</li>
+    <li>Pull Request | propose changes to the original repository from your forked copy</li>
+    <li>Steps to Fork and Create a Pull Request</li>
+    <ol>
+      <li>Navigate to the repository you want to contribute to</li>
+      <li>Click on the "Fork" button at the top right corner of the repository page</li>
+      <li>This will create a copy of the repository under your GitHub account</li>
+      <li>Clone the forked repository to your local machine using git clone (your forked repo URL)</li>
+      <li>Create a new branch for your changes using git branch (branch name) and switch to it using git checkout (branch name)</li>
+      <li>Make your changes and commit them using git add . and git commit -m "Your commit message"</li>
+      <li>Push your changes to your forked repository using git push origin (branch name)</li>
+      <li>Go to the original repository on GitHub and click on the "New Pull Request" button</li>
+      <li>Select your branch from your forked repository and compare it with the original repository's main branch</li>
+      <li>Add a title and description for your pull request, then click on "Create Pull Request"</li>
     </ol>
 </ul>
-
 
 
 </body>
